@@ -16,7 +16,7 @@ module.exports = {
             template: 'template.html'
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].css"
+
         }),
     ],
     entry: {
@@ -53,7 +53,7 @@ module.exports = {
             {
                 test: /\.less$/,
                 use: [
-                    MiniCssExtractPlugin.loader, "style-loader", "css-loader", "less-loader"
+                    MiniCssExtractPlugin.loader, "css-loader", "less-loader"
                 ]
             }
         ]
